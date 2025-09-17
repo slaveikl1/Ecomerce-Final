@@ -139,7 +139,7 @@ foreach ($_SESSION['carrinho'] as $item) {
     <!-- Ícone do carrinho -->
     <div class="carrinho">
         <a href="2carrinho.php">
-            <img src="carrinho.png" alt="Carrinho">
+            <img src="imagens/carrinho.png" alt="Carrinho">
             <span class="contador"><?= $totalCarrinho ?></span> <!-- mostra quantidade de itens -->
         </a>
     </div>
@@ -183,3 +183,4 @@ foreach ($_SESSION['carrinho'] as $item) {
 
 </body>
 </html>
+
