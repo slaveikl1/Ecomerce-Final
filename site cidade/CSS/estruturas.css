@@ -1,0 +1,152 @@
+/* ===================================
+   ESTILO GLOBAL
+=================================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: #111;
+    color: #fff;
+}
+
+/* ===================================
+   CABEÇALHO INTERNO
+=================================== */
+.header-interno {
+    background: #02cbda;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 60px;
+}
+
+.logo-container h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* AÇÕES DO HEADER */
+.acoes-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Comandos para o ícone de pesquisa - buscar */
+
+/* Posição do campo de busca */
+.search-bar {
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+/*tamanho do campo de busca */
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #555;
+    color: white;
+    border: none;
+}
+
+.highlight {
+    background-color: yellow; /* Cor de fundo para destacar a palavra */
+    font-weight: bold;         /* Deixar em negrito */
+}
+
+.theme-btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-voltar {
+    background: white;
+    color: #02cbda;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* ===================================
+   SEÇÕES
+=================================== */
+.secao {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.dark-mode .secao {
+    background: #222;
+}
+
+/* IMAGEM PRINCIPAL */
+.imagem-estrutura img {
+    width: 700px;     /* ajusta o tamanho exato  */
+    height: auto;     /* mantém a proporção da imagem */
+    display: block;   /* necessário para centralizar */
+    margin: 0 auto;   /* centraliza completamente */
+    border-radius: 15px;
+}
+
+/* LISTAS */
+.informacoes ul li,
+.servicos ul li {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.lista-profissionais {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    background: #e2f9ff;
+    padding: 15px;
+    border-radius: 12px;
+    width: calc(50% - 20px);
+}
+
+.dark-mode .categoria {
+    background: #333;
+}
+
+.categoria h3 {
+    margin-top: 0;
+}
+
+/* RODAPÉ */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #02cbda;
+    color: white;
+    margin-top: 40px;
+}

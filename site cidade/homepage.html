@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End City - Cidade Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/logos/logo.png"> <!-- Sua logo -->
+</head>
+<!--Bliblioteca panzoom-->
+<script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+
+
+<body>
+
+    <!-- ================= CABEÇALHO ================= -->
+    <header>
+        <a href="homepage.html">
+            <img src="imagens/logos/logo.png" class="logo" alt="Logo da Cidade">
+        </a>
+
+        <h1>END CITY</h1>
+        <h2 class="slogan">A Cidade do Fim dos Seus Problemas</h2>
+
+        <a href="https://seudominio-banco.com" target="_blank" class="icone-banco">
+            <img src="imagens/logos/icone_banco.png" alt="Banco">
+        </a>
+
+        <!-- Barra com atalhos -->
+        <nav class="atalhos">
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#apresentacao">Apresentação</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#indicadores">Indicadores</a></li>
+                <li><a href="#extras">Informações Extras</a></li>
+            </ul>
+        </nav>
+
+        <!-- Busca + tema -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button onclick="searchContent()">🔍</button>
+        </div>
+        <div class="tema-escuro">
+            <button id="toggle-theme">🌙</button>
+        </div>
+
+
+
+    </header>
+
+    <!-- ================= HISTÓRIA ================= -->
+    <section id="historia" class="secao">
+        <h2>História da Cidade</h2>
+        <p>
+            End City nasceu a partir da necessidade de criar um ecossistema urbano totalmente sustentável,
+            inteligente e autossuficiente. Idealizada como um modelo acadêmico e tecnológico avançado,
+            a cidade reúne setores essenciais — saúde, educação, energia, transporte e segurança —
+            operando de forma integrada e digitalizada.
+        </p>
+        <p>
+            Seu objetivo central é demonstrar como uma cidade moderna pode funcionar com processos
+            eficientes, energia limpa, moeda digital própria (EndCash) e indicadores acompanhados em tempo
+            real.
+        </p>
+    </section>
+
+    <!-- ================= APRESENTAÇÃO ================= -->
+    <section id="apresentacao" class="secao">
+        <h2>Apresentação – Guia Turístico</h2>
+
+        <div class="carrossel">
+            <div class="slide">
+                <img src="imagens/estruturas/cachoeira.jpg" alt="Notícia 4">
+                <h3>Cachoeira</h3>
+                <p></p>
+            </div>
+            <div class="slide">
+                <img src="imagens/estruturas/campo de futebol.jpg" alt="Notícia 1">
+                <h3>Campo de Futebol END CITY</h3>
+                <p></p>
+            </div>
+            <div class="slide">
+                <img src="imagens/estruturas/parque de diversoes.jpg" alt="Notícia 2">
+                <h3>Endivertimento</h3>
+                <p></p>
+            </div>
+            <div class="slide">
+                <img src="imagens/estruturas/praça.jpg" alt="Notícia 3">
+                <h3>Praça End</h3>
+                <p></p>
+            </div>
+            <div class="slide">
+                <img src="imagens/estruturas/universidade.jpg" alt="Notícia 4">
+                <h3>Universidade</h3>
+                <p></p>
+            </div>
+
+            <!-- Adicionar mais slides conforme necessário -->
+            <button class="prev">◀️</button>
+            <button class="next">▶️</button>
+        </div>
+
+        <p>Explore os principais pontos turísticos da cidade, parques, praças, centro cultural e muito mais.</p>
+
+        <a href="https://www.google.com/flights" target="_blank" class="botao-passagens">Comprar passagem para End
+            City</a>
+    </section>
+
+    <!-- ================= MAPA ================= -->
+    <section id="mapa" class="secao">
+        <h2>Mapa Interativo da Cidade</h2>
+
+        <div class="mapa-wrapper">
+            <div class="mapa-container">
+
+                <img src="imagens/estruturas/mapa.png" alt="Mapa da Cidade" class="mapa">
+
+                <div class="icone-estrutura" style="top: 48%; left: 65%;">
+                    <a href="sites_estruturas/Educação/escola.html">
+                        <img src="imagens/logos/escola.png" alt="Escola">
+                    </a>
+                    <span class="nome-estrutura">Escola</span>
+                </div>
+                <div class="icone-estrutura" style="top: 40%; left: 42%;">
+                    <a href="sites_estruturas/Saude/hospital.html">
+                        <img src="imagens/logos/hospital.png" alt="Hospital">
+                    </a>
+                    <span class="nome-estrutura">Hospital</span>
+                </div>
+            </div>
+        </div>
+
+
+        <p>Passe o mouse sobre o mapa para revelar estruturas clicáveis da cidade.</p>
+    </section>
+
+    <!-- ================= INDICADORES ================= -->
+    <section id="indicadores" class="secao">
+        <h2>Indicadores da Cidade</h2>
+
+        <div class="indicador-item">
+            <span id="interno"></span>
+        </div>
+        <div class="indicador-item">
+            <span id="externo"></span>
+        </div>
+        <div class="indicador-item">
+            <span id="economia"></span>
+        </div>
+        <div class="indicador-item">
+            <span id="populacao"></span>
+        </div>
+
+        <p>(Os dados serão conectados ao banco de dados futuramente)</p>
+    </section>
+
+    <!-- ================= EXTRAS ================= -->
+    <section id="extras" class="secao">
+        <h2>Informações Extras</h2>
+        <ul>
+            <li>Estimativa de vida: 84 anos</li>
+            <li>Como morar na cidade: necessário vínculo empregatício interno</li>
+            <li>Requisitos: documentação completa + registro no cartório de End City</li>
+            <li>Criadores da cidade: Equipe acadêmica End Tech</li>
+        </ul>
+    </section>
+
+    <!--Integrando com o Java Script-->
+    <script src="script.js"></script>
+
+    <!--Integrando com o PHP/Dashboard-->
+    <script>
+        function updateDashboard() {
+            fetch('dashboard.php')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("interno").textContent = `R$ ${data.interno}`;
+                    document.getElementById("externo").textContent = `R$ ${data.externo}`;
+                    document.getElementById("economia").textContent = `R$ ${data.economia}`;
+                    document.getElementById("populacao").textContent = data.populacao;
+                })
+                .catch(err => console.error("Erro ao atualizar dashboard:", err));
+        }
+
+        updateDashboard();
+        setInterval(updateDashboard, 5000);
+
+    </script>
+
+
+</body>
+
+<!--Seção para informações finais do site-->
+<section class="redes_sociais">
+    <!-- Redes Sociais -->
+    <div class="links-sociais">
+        <div class="instagram">
+            <img src="imagens/Logos/instagram.png" alt="instagram">
+            <a href="https://www.instagram.com/" target="_blank"> @EndCity_CidadeFuturistica</a>
+        </div>
+
+        <div class="facebook">
+            <img src="imagens/Logos/facebook.png" alt="facebook">
+            <a href="https://www.facebook.com/" target="_blank"> EndCity_CidadeFuturistica</a>
+        </div>
+
+        <div class="twitter">
+            <img src="imagens/Logos/twitter.png" alt="twitter">
+            <a href="https://x.com/?lang=pt" target="_blank"> EndCity_CidadeFuturistica</a>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="blog">
+        <p>© Copyright 2025 End City Futurística @Fim dos seus problemas</p>
+        <img src="imagens/logos/logo.png" alt="logo">
+    </div>
+</section>
+
+</html>
